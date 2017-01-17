@@ -28,7 +28,7 @@ $(document).ready(function() {
     $("#output").text(result);
   });
 
-  $("form#add").submit(function(event) {
+  $("form#multiply").submit(function(event) {
     event.preventDefault();
     var number1 = parseInt($("#multiply1").val());
     var number2 = parseInt($("#multiply2").val());
@@ -37,7 +37,7 @@ $(document).ready(function() {
   });
 
   $("form#divide").submit(function(event) {
-    even.preventDefault();
+    event.preventDefault();
     var number1 = parseInt($("#divide1").val());
     var number2 = parseInt($("#divide2").val());
     var result = divide(number1, number2);
